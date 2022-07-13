@@ -1,18 +1,19 @@
 ---
-title: "rconf-2022"
-subtitle: "Create beautiful interactive slide decks with Reveal.js"
+title: 'The Benefit of Talking to the "Non-Datas"'
+subtitle: "rstudio::conf() 2022"
 author: "Caro Buck"
 #format: revealjs
 format:
   revealjs: 
-    theme: [default, custom.scss]
+    #theme: [default, custom.scss]
+    theme: custom.scss
     slide-number: true
     chalkboard: 
       buttons: false
     preview-links: auto
     #logo: images/quarto.png
     #css: styles.css
-    footer: <https://quarto.org>
+    footer: <https://carobuck.com>
     multiplex: true
     
 #resources: # do I need this?? tbd what to do w/ this
@@ -20,8 +21,9 @@ format:
 ---
 
 
-## Hello, There
+## Hook/armchair covid
 
+Welcome to the data party
 This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
 
 -   Presenting code and LaTeX equations
@@ -31,6 +33,117 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 -   Printing to PDF
 
 ...and much more
+
+## What people think data are
+TODO: make this full screen image! no title on slide
+TODO: insert an image/drawing here...
+![Screenshot of Google Search results for "data"](imgs/google_data.png){fig-alt="Screenshot of Google Search results for 'data'"}
+
+
+## What data actually are
+
+TODO: insert an image/drawing here...
+
+## You're invited to the party
+
+**TODO**: amp up this slide w/ visuals/background for a party. confetti animation? 
+* Who: everyone!
+* what: talk about data
+* where: anywhere!
+* when: whenever!
+* why: because it's cool!
+* how: with excitement and curiosity (we'll get there)
+
+::: {.notes}
+Like a good party invite, it’s a lot more fun if you’ve got all the details down (unless surprise party, but someone should have the details then)
+Make clear the ref/analogy to party invite (highlight diff aspects)
+We're going to cover all of this (but maybe not in this order)
+:::
+
+## WHY
+
+2. Why
+  a. most impt, starting w/ this
+Mention accessibility (maybe elaborate in the how section)
+HOW DOES ACCESSIBILITY FACTOR IN? --> **TBD on including this??** --> yes, include! in maybe where or why or how
+Visualizations themselves are an accessibility tool, rather than looking at a block of numbers in a spreadsheet or table.
+Of course, there are lots of ways to make visualizations more/less accessible (that's a topic for a whole other talk and there area numerous resources available, so we won't get too in the weeds there)
+By realizing what data literacy is and why it's important for us all to have some level of it, we (looking at those who are deeper in the tech/data world) can lend a hand to others.
+
+“data are art + science”; so much more than just numbers (can be charts, vizzes, categories, counts, used for/tracked on/predicted for so many things
+Maybe Transition: so because there are so many different ways to interpret ”what data is” there’s also a lot of misconceptions about it. So it’s important to talk about data with everyone, not just those who are “data people”
+
+::: {.notes}
+this one's pretty important, so we're starting w/ it first
+:::
+
+## WHO:
+
+**Maybe consider putting this before the ‘why’? Feels like a back tracking…so be careful about that**
+  a. Who is a "non data" --> **do I need to incl this? --> can make short/quick** (mention this is why there are quotes around it)
+  b. usually self-designated (I think anyone/everyone can be a data person, but on a spectrum; we aren't/don't have to be at same level)
+  c. who you should be talking to
+    1. if you work in an org, talk with people not on your team, or people that you may work w/ obliquely
+
+::: {.notes}
+Use this as a “real quick let’s clarify who is a “data” person” moment to say why I’ve been putting quotes around it
+:::
+
+## WHAT
+
+4. what
+  a. what to say depends on level of person/where they are on data spectrum
+Like are we going full on theme party (maybe into the weeds on a ML model) or staying a bit more high level with some small talk (maybe get excited about an interesting data journalism article on music taste you saw float by on Twitter recently)
+The “what” could be educational, it could be entertaining, it could be both (‘pique the curiosity’). Depends on the rest of the party invite
+
+::: {.notes}
+
+:::
+
+## WHERE/WHEN
+
+5. where/when
+  a. lol always and forever
+  b. in seriousness: where could be small doses?
+  c. when: pre-emptive meetings
+  d. consider where people encounter data/viz
+Consider: Is this a last minute backyard hangout or a wedding planned months in advance?
+The where/when and what might also inform the others. E.g. if you want/need to deep dive on something to bridge understanding/knowledge gap, it makes sense to set up time in advance to discuss, so the audience has some sense of what they are getting into. If you’re casually bringing it up in a way to entertain/show another side of data (e.g. a new/unexpected place to find data, or a creative data use), the where/when might be over lunch, or a brief meeting in a hallway, or maybe even something you share on social media (??)
+
+::: {.notes}
+
+:::
+
+## HOW
+
+6. how
+end w/ practical tips
+Twitter? Famous data ppl?
+Ask team?  maybe talk about process of gathering this info, it’s a collective effort/convo (no one is gatekeeper to everything/knows everything about this; there’s always something new to learn which keeps it exciting)
+
+just get started? will feel awk, but just need to jump in and do it
+
+
+::: {.notes}
+share anecdotal story of talking to guy for STR
+:::
+
+## WHY (REMINDER + STORY)
+
+7. end w/ final wrap up/remind ppl the WHY
+  a. want ppl to walk away and feel inspired to go share data passion/excitement w/ others
+  b. end w/ story about sharing data w/ [creative] coworkers (they didn't realize data could be so much more than reporting/analytics. and when others see the inspiration/possibilities, we can do cooler things with data!!)
+
+::: {.notes}
+this builds upon guy STR story on prev slide..? yes, I think so. 
+:::
+
+## Q's + TY
+
+Thanks for coming to my party! Go do your own parties now!
+(slide to look like TY note?)
+
+
 
 ## Pretty Code {auto-animate="true"}
 

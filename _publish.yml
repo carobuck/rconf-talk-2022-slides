@@ -1,0 +1,4 @@
+- source: rconf_preso.qmd
+  netlify:
+    - id: bab7d21e-31d0-4b40-81ad-bb2e6a33167b
+      url: 'https://rconf-2022-caro-buck.netlify.app'
