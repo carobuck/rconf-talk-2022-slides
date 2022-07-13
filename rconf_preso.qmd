@@ -5,13 +5,16 @@ author: "Caro Buck"
 #format: revealjs
 format:
   revealjs: 
+    theme: [default, custom.scss]
     slide-number: true
     chalkboard: 
       buttons: false
     preview-links: auto
-    logo: images/quarto.png
-    css: styles.css
+    #logo: images/quarto.png
+    #css: styles.css
     footer: <https://quarto.org>
+    multiplex: true
+    
 #resources: # do I need this?? tbd what to do w/ this
 #  - demo.pdf
 ---
