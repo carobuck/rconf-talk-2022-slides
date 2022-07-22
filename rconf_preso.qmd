@@ -1,121 +1,201 @@
 ---
-title: 'The Benefit of Talking to the "Non-Datas"'
-subtitle: "rstudio::conf() 2022"
-author: "Caro Buck"
-#format: revealjs
+#title: 'The Benefit of Talking to the "Non-Datas"'
+#subtitle: "rstudio::conf() 2022"
+#author: "Caro Buck"
 format:
   revealjs: 
     #theme: [default, custom.scss]
     theme: custom.scss
     slide-number: true
-    chalkboard: 
-      buttons: false
     preview-links: auto
     #logo: images/quarto.png
     #css: styles.css
     footer: <https://carobuck.com>
     multiplex: true
-    
+    self-contained: true 
+
 #resources: # do I need this?? tbd what to do w/ this
 #  - demo.pdf
 ---
+## {background-image="imgs/Title.png"}
+## {background-image="imgs/Armchair.png"}
 
-
-## Hook/armchair covid
-
+:::{.notes}
+Hook/armchair covid story: in 2020 we all sort of became arm chair experts .....if you were thinking COVID, then you and I are thinking the same thing
 Welcome to the data party
-This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
+:::
 
--   Presenting code and LaTeX equations
--   Including computations in slide output
--   Image, video, and iframe backgrounds
--   Fancy transitions and animations
--   Printing to PDF
+## {background-image="imgs/Armchair_COVID.png"}
 
-...and much more
+## {background-image="imgs/Background.png"}
 
-## What people think data are
+
+<br/><br/>
+
+**"They’ve forgotten just how much they know. They think that they’re not doing anything interesting because they assume that everyone knows as much as they do... <br/>As you become more of an expert, your quality bar gets higher and higher and you forget that everything you know is not known by everyone."**
+
+-Aaron Francis 
+
+::: footer
+[Aaron Francis on publishing your work](https://github.com/readme/guides/publishing-your-work)
+:::
+
+:::{.notes}
+maybe put this after the "what data are" slides??
+
+"this is a common blind spot for people executing at a high level"
+we're all "experts" (or on the spectrum of 'expert') in something
+:::
+
+## What people think data are {background-image="imgs/Think_Data_Are.png"}
+
+:::{.notes}
 TODO: make this full screen image! no title on slide
 TODO: insert an image/drawing here...
-![Screenshot of Google Search results for "data"](imgs/google_data.png){fig-alt="Screenshot of Google Search results for 'data'"}
+:::
 
+## What data actually are {background-image="imgs/Data_Actually_Are.png"}
 
-## What data actually are
+:::{.notes}
+TODO: insert R code/image fragments here...
+:::
 
-TODO: insert an image/drawing here...
+## You're invited to the party {background-image="imgs/Background.png"}
 
-## You're invited to the party
-
-**TODO**: amp up this slide w/ visuals/background for a party. confetti animation? 
-* Who: everyone!
-* what: talk about data
-* where: anywhere!
-* when: whenever!
-* why: because it's cool!
-* how: with excitement and curiosity (we'll get there)
+:::{.incremental}
+- Who: Everyone!
+- What: Talk about data
+- Where: Anywhere!
+- When: Whenever!
+- Why: Because it's cool! (And useful)
+- How: With excitement and curiosity (we'll get there)
+:::
 
 ::: {.notes}
+**TODO**: amp up this slide w/ visuals/background for a party. confetti animation gif? --> make this a transition slide
+
 Like a good party invite, it’s a lot more fun if you’ve got all the details down (unless surprise party, but someone should have the details then)
 Make clear the ref/analogy to party invite (highlight diff aspects)
 We're going to cover all of this (but maybe not in this order)
 :::
 
-## WHY
-
-2. Why
-  a. most impt, starting w/ this
-Mention accessibility (maybe elaborate in the how section)
-HOW DOES ACCESSIBILITY FACTOR IN? --> **TBD on including this??** --> yes, include! in maybe where or why or how
-Visualizations themselves are an accessibility tool, rather than looking at a block of numbers in a spreadsheet or table.
-Of course, there are lots of ways to make visualizations more/less accessible (that's a topic for a whole other talk and there area numerous resources available, so we won't get too in the weeds there)
-By realizing what data literacy is and why it's important for us all to have some level of it, we (looking at those who are deeper in the tech/data world) can lend a hand to others.
-
-“data are art + science”; so much more than just numbers (can be charts, vizzes, categories, counts, used for/tracked on/predicted for so many things
-Maybe Transition: so because there are so many different ways to interpret ”what data is” there’s also a lot of misconceptions about it. So it’s important to talk about data with everyone, not just those who are “data people”
+## WHO: {background-image="imgs/Who_Slide_1.png"}
 
 ::: {.notes}
-this one's pretty important, so we're starting w/ it first
-:::
+TODO: make straight line drawing + pics to drop in of persons + curvy tree branch line
 
-## WHO:
+novice ---> expert* (and beyond)
+maybe you fall here* or here* or here* (add lil people popping up on each slide --> incremental fragment add w/ fixed location? need to define each as fragments)
+
+"worth noting that" line from novice to expert may not be at all straight, and that it's not a single line. It probably more looks like a swirling, multi-branched tree/plant root ("choose your own adventure" style) --> because we all might be "experts" in diff things, it's worthwhile sharing what we know! remember, quote from before about common blindspots!
+
+
+Use this as a “real quick let’s clarify who is a “data” person” moment to say why I’ve been putting quotes around it
 
 **Maybe consider putting this before the ‘why’? Feels like a back tracking…so be careful about that**
   a. Who is a "non data" --> **do I need to incl this? --> can make short/quick** (mention this is why there are quotes around it)
   b. usually self-designated (I think anyone/everyone can be a data person, but on a spectrum; we aren't/don't have to be at same level)
   c. who you should be talking to
     1. if you work in an org, talk with people not on your team, or people that you may work w/ obliquely
-
-::: {.notes}
-Use this as a “real quick let’s clarify who is a “data” person” moment to say why I’ve been putting quotes around it
 :::
 
-## WHAT
+## WHO: {background-image="imgs/Who_Slide_2.png"}
+## WHO: {background-image="imgs/Who_Slide_3.png"}
+## WHO: {background-image="imgs/Who_Slide_4.png"}
 
+## WHAT {background-image="imgs/XY_Axis_Slide.png"}
+
+::: {.notes}
 4. what
   a. what to say depends on level of person/where they are on data spectrum
 Like are we going full on theme party (maybe into the weeds on a ML model) or staying a bit more high level with some small talk (maybe get excited about an interesting data journalism article on music taste you saw float by on Twitter recently)
 The “what” could be educational, it could be entertaining, it could be both (‘pique the curiosity’). Depends on the rest of the party invite
-
-::: {.notes}
-
 :::
 
-## WHERE/WHEN
+## WHAT {background-image="imgs/XY_Axis_Slide_Filled_In.png"}
+
+:::{.notes}
+TODO add fixed location text links for each example
+
+[Spotify Wrapped](https://newsroom.spotify.com/2021-12-01/the-wait-is-over-your-spotify-2021-wrapped-is-here/)
+
+[Pudding's Music Borders](https://pudding.cool/2018/06/music-map/?date=202106)
+
+[Nadieh Bremer's Gold Record Data Art](https://www.visualcinnamon.com/portfolio/sony-music-data-art/)
+
+[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/)
+:::
+
+## WHERE/WHEN {background-image="imgs/Background.png"}
+
+TODO: figure out what to put on this slide... 
 
 5. where/when
   a. lol always and forever
   b. in seriousness: where could be small doses?
   c. when: pre-emptive meetings
   d. consider where people encounter data/viz
+
+
+::: {.notes}
 Consider: Is this a last minute backyard hangout or a wedding planned months in advance?
 The where/when and what might also inform the others. E.g. if you want/need to deep dive on something to bridge understanding/knowledge gap, it makes sense to set up time in advance to discuss, so the audience has some sense of what they are getting into. If you’re casually bringing it up in a way to entertain/show another side of data (e.g. a new/unexpected place to find data, or a creative data use), the where/when might be over lunch, or a brief meeting in a hallway, or maybe even something you share on social media (??)
+:::
+
+## WHY {background-image="imgs/Sci_Art.png"}
 
 ::: {.notes}
 
+TODO: consider putting this slide after "who"??
+this one's pretty important, so we're starting w/ it first
+
+“data are art + science”; so much more than just numbers (can be charts, vizzes, categories, counts, used for/tracked on/predicted for so many things
+Maybe Transition: so because there are so many different ways to interpret ”what data is” there’s also a lot of misconceptions about it. So it’s important to talk about data with everyone, not just those who are “data people”
+
 :::
 
-## HOW
+## WHY- accessibility {background-image="imgs/Background.png"}
 
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+
+penguins %>%
+  group_by(species) %>%
+  #summarise(across(ends_with('mm')),.fun=mean)
+  glimpse
+  #kable::kab
+```
+(will have table of numbers --> viz of numbers)
+
+::: {.notes}
+TODO: make image of table of numbers --> viz (use palmer penguins as example). make something for these 4: (in text, in  table, in single stats, in viz) of palmer penguins.
+Maybe incl slide before one with all 4 things of penguins wandering gif/pushing each other into ice
+
+you could go out an count penguins all day, and maybe that's what you do. but if that was the only way to learn about them for everyone, then we might not get too far. we rely on others' data to summarize, to count, to understand the world around us. and if we present data in different ways (in text, in  table, in single stats, in viz) we'll be able to understand different aspects/maybe learn something new
+
+this is just one example of how data can be used as an accessibility tool. numbers themselves can be a way to summarise information, and if we show numbers/data in a particular way, it can make the info more (or less) clear and accessible to folks. 
+
+
+Mention accessibility (maybe elaborate in the how section)
+HOW DOES ACCESSIBILITY FACTOR IN? --> **TBD on including this??** --> yes, include! in maybe where or why or how
+Visualizations themselves are an accessibility tool, rather than looking at a block of numbers in a spreadsheet or table.
+Of course, there are lots of ways to make visualizations more/less accessible (that's a topic for a whole other talk and there area numerous resources available, so we won't get too in the weeds there)
+By realizing what data literacy is and why it's important for us all to have some level of it, we (looking at those who are deeper in the tech/data world) can lend a hand to others.
+:::
+
+
+
+
+
+## HOW {background-image="imgs/Background.png"}
+
+TODO: make slide. this will be mostly text/links for learning more (make incremental)
+TODO: figure out how to change bullet points
+
+
+
+::: {.notes}
 6. how
 end w/ practical tips
 Twitter? Famous data ppl?
@@ -123,410 +203,32 @@ Ask team?  maybe talk about process of gathering this info, it’s a collecti
 
 just get started? will feel awk, but just need to jump in and do it
 
-
-::: {.notes}
 share anecdotal story of talking to guy for STR
 :::
 
-## WHY (REMINDER + STORY)
+## {background-image="imgs/End_Story.png"}
 
+::: {.notes}
+WHY (REMINDER + STORY) 
+TODO: think of what I want visually on this slide to tell the story...maybe screenshot from what I shared with creatives? 
+maybe image of my data portraits? (inspired by giorgia lupi, shared w/ my team b/c bored/covid/thought we'd go back to office sooner. word got around and I )
 7. end w/ final wrap up/remind ppl the WHY
   a. want ppl to walk away and feel inspired to go share data passion/excitement w/ others
   b. end w/ story about sharing data w/ [creative] coworkers (they didn't realize data could be so much more than reporting/analytics. and when others see the inspiration/possibilities, we can do cooler things with data!!)
 
-::: {.notes}
-this builds upon guy STR story on prev slide..? yes, I think so. 
 :::
 
-## Q's + TY
+## {background-image="imgs/Ty_And_Question.png"}
 
+:::{.notes}
 Thanks for coming to my party! Go do your own parties now!
 (slide to look like TY note?)
-
-
-
-## Pretty Code {auto-animate="true"}
-
--   Over 20 syntax highlighting themes available
--   Default theme optimized for accessibility
-
-
-
-::: footer
-Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
-:::
-
-## Code Animations {auto-animate="true"}
-
--   Over 20 syntax highlighting themes available
--   Default theme optimized for accessibility
-
-
-
-::: footer
-Learn more: [Code Animations](https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations)
-:::
-
-## Line Highlighting
-
--   Highlight specific lines for emphasis
--   Incrementally highlight additional lines
-
-
-
-::: footer
-Learn more: [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
-:::
-
-## Executable Code
-
-```{r}
-#| echo: true
-#| fig-width: 10
-#| fig-height: 4.5
-library(ggplot2)
-ggplot(mtcars, aes(hp, mpg, color = am)) +
-  geom_point() +  geom_smooth(formula = y ~ x, method = "loess")
-```
-
-::: footer
-Learn more: [Executable Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
 :::
 
 
-## Column Layout {.smaller}
-
-Arrange content into columns of varying widths:
-
-::: columns
-::: {.column width="35%"}
-#### Motor Trend Car Road Tests
-
-The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.
-:::
-
-::: {.column width="3%"}
-:::
-
-::: {.column width="62%"}
-```{r}
-knitr::kable(head(mtcars)[,c("mpg",	"cyl", "disp", "hp", "wt")])
-```
-:::
-:::
-
-::: footer
-Learn more: [Multiple Columns](https://quarto.org/docs/presentations/revealjs/#multiple-columns)
-:::
-
-## Incremental Lists
-
-Lists can optionally be displayed incrementally:
-
-::: incremental
--   First item
--   Second item
--   Third item
-:::
-
-. . .
-
-<br/> Insert pauses to make other types of content display incrementally.
-
-::: footer
-Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
-:::
-
-## Fragments
-
-Incremental text display and animation with fragments:
-
-<br/>
-
-::: {.fragment .fade-in}
-Fade in
-:::
-
-::: {.fragment .fade-up}
-Slide up while fading in
-:::
-
-::: {.fragment .fade-left}
-Slide left while fading in
-:::
-
-::: {.fragment .fade-in-then-semi-out}
-Fade in then semi out
-:::
-
-. . .
-
-::: {.fragment .strike}
-Strike
-:::
-
-::: {.fragment .highlight-red}
-Highlight red
-:::
-
-::: footer
-Learn more: [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
-:::
-
-## Slide Backgrounds {background="#43464B"}
-
-Set the `background` attribute on a slide to change the background color (all CSS color formats are supported).
-
-Different background transitions are available via the `background-transition` option.
-
-::: footer
-Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
-:::
-
-## Media Backgrounds {background="#43464B" background-image="images/milky-way.jpeg"}
-
-You can also use the following as a slide background:
-
--   An image: `background-image`
-
--   A video: `background-video`
-
--   An iframe: `background-iframe`
-
-::: footer
-Learn more: [Media Backgrounds](https://quarto.org/docs/presentations/revealjs/#image-backgrounds)
-:::
-
-## Absolute Position
-
-Position images or other elements at precise locations
-
-![](mini/images/kitten-400-350.jpeg){.absolute top="170" left="30" width="400" height="400"}
-
-![](mini/images/kitten-450-250.jpeg){.absolute .fragment top="150" right="80" width="450"}
-
-![](mini/images/kitten-300-200.jpeg){.absolute .fragment bottom="110" right="130" width="300"}
-
-::: footer
-Learn more: [Absolute Position](https://quarto.org/docs/presentations/revealjs/advanced.html#absolute-position)
-:::
-
-## Auto-Animate {auto-animate="true" auto-animate-easing="ease-in-out"}
-
-Automatically animate matching elements across slides with Auto-Animate.
-
-::: r-hstack
-::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
-:::
-:::
-
-::: footer
-Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanced.html#auto-animate)
-:::
-
-## Auto-Animate {auto-animate="true" auto-animate-easing="ease-in-out"}
-
-Automatically animate matching elements across slides with Auto-Animate.
-
-::: r-stack
-::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
-:::
-
-::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
-:::
-
-::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
-:::
-:::
-
-::: footer
-Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanced.html#auto-animate)
-:::
-
-## Slide Transitions {.smaller}
-
-The next few slides will transition using the `slide` transition
-
-| Transition | Description                                                            |
-|------------|------------------------------------------------------------------------|
-| `none`     | No transition (default, switch instantly)                              |
-| `fade`     | Cross fade                                                             |
-| `slide`    | Slide horizontally                                                     |
-| `convex`   | Slide at a convex angle                                                |
-| `concave`  | Slide at a concave angle                                               |
-| `zoom`     | Scale the incoming slide so it grows in from the center of the screen. |
-
-::: footer
-Learn more: [Slide Transitions](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions)
-:::
-
-## Tabsets {.smaller .scrollable transition="slide"}
-
-::: panel-tabset
-### Plot
-
-```{r}
-library(ggplot2)
-ggplot(mtcars, aes(hp, mpg, color = am)) +
-  geom_point() +  geom_smooth(formula = y ~ x, method = "loess")
-```
-
-### Data
-
-```{r}
-knitr::kable(mtcars)
-```
-:::
-
-::: footer
-Learn more: [Tabsets](https://quarto.org/docs/presentations/revealjs/#tabsets)
-Learn more: [Jupyter widgets](https://quarto.org/docs/interactive/widgets/jupyter.html), [htmlwidgets](https://quarto.org/docs/interactive/widgets/htmlwidgets.html)
-:::
-
-
-## Interactive Slides {.smaller transition="slide"}
-
-Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.
-
-
-
-::: footer
-Learn more: [Observable](https://quarto.org/docs/interactive/ojs/), [Shiny](https://quarto.org/docs/interactive/shiny/), [Component Layout](https://quarto.org/docs/interactive/layout.html)
-:::
-
-## Preview Links
-
-Navigate to hyperlinks without disrupting the flow of your presentation.
-
-Use the `preview-links` option to open links in an iframe on top of your slides. Try clicking the link below for a demonstration:
-
-::: {style="text-align: center; margin-top: 1em"}
-[Matplotlib: Visualization with Python](https://matplotlib.org/){preview-link="true" style="text-align: center"}
-:::
-
-::: footer
-Learn more: [Preview Links](https://quarto.org/docs/presentations/revealjs/presenting.html#preview-links)
-:::
-
-## Themes
-
-10 Built-in Themes (or [create your own](https://quarto.org/docs/presentations/revealjs/themes.html#creating-themes))
-
-::: {layout-ncol="2"}
-![](images/moon.png)
-
-![](images/sky.png)
-:::
-
-::: footer
-Learn more: [Themes](https://quarto.org/docs/presentations/revealjs/themes.html)
-:::
-
-## Easy Navigation
-
-::: {style="margin-bottom: 0.9em;"}
-Quickly jump to other parts of your presentation
-:::
-
-::: {layout="[1, 20]"}
-![](images/presentation-menu.png){width="41"}
-
-Toggle the slide menu with the menu button (bottom left of slide) to go to other slides and access presentation tools.
-:::
-
-You can also press `m` to toggle the menu open and closed.
-
-::: footer
-Learn more: [Navigation](https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu)
-:::
-
-## Chalkboard {chalkboard-buttons="true"}
-
-::: {style="margin-bottom: 0.9em;"}
-Free form drawing and slide annotations
-:::
-
-::: {layout="[1, 20]"}
-![](images/presentation-chalkboard.png){width="41"}
-
-Use the chalkboard button at the bottom left of the slide to toggle the chalkboard.
-:::
-
-::: {layout="[1, 20]"}
-![](images/presentation-notes-canvas.png){width="41"}
-
-Use the notes canvas button at the bottom left of the slide to toggle drawing on top of the current slide.
-:::
-
-You can also press `b` to toggle the chalkboard or `c` to toggle the notes canvas.
-
-::: footer
-Learn more: [Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
-:::
-
-## Point of View
-
-Press `o` to toggle overview mode:
-
-![](images/overview-mode.png){.border}
-
-Hold down the `Alt` key (or `Ctrl` in Linux) and click on any element to zoom towards it---try it now on this slide.
-
-::: footer
-Learn more: [Overview Mode](https://quarto.org/docs/presentations/revealjs/presenting.html#overview-mode), [Slide Zoom](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-zoom)
-:::
-
-## Speaker View
-
-Press `s` (or use the presentation menu) to open speaker view
-
-![](images/speaker-view.png){fig-align="center" style="border: 3px solid #dee2e6;" width="780"}
-
-::: footer
-Learn more: [Speaker View](https://quarto.org/docs/presentations/revealjs/presenting.html#speaker-view)
-:::
-
-## Authoring Tools {.smaller}
-
-Live side-by-side preview for any notebook or text editor including Jupyter and VS Code
-
-::: columns
-::: {.column width="50%"}
-![](images/jupyter-edit.png){.border .border-thick}
-:::
-
-::: {.column width="50%"}
-![](images/jupyter-preview.png){.border .border-thick}
-:::
-:::
-
-::: footer
-Learn more: [Jupyter](https://quarto.org/docs/tools/jupyter-lab.html), [VS Code](https://quarto.org/docs/tools/vscode.html), [Text Editors](https://quarto.org/docs/tools/text-editors.html)
-:::
-
-## Authoring Tools {.smaller}
-
-RStudio includes an integrated presentation preview pane
-
-![](images/rstudio.png){.border width="900"}
-
-::: footer
-Learn more: [RStudio](https://quarto.org/docs/tools/rstudio.html)
-:::
-
-## And More...
-
--   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) optimized (presentations look great on mobile, swipe to navigate slides)
--   [Footer & Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo) (optionally specify custom footer per-slide)
--   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
--   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
-
-::: footer
-Learn more: [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/)
-:::
+## TODOs
+
+- change bullets
+- take off slide headings?? for 5 W's (maybe make small, like an aside? in upper right corner for people to be tracking along)
+- are data portraits img clear? (not fuzzy)
+- cmd + F other "TODO" in doc

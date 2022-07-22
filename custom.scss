@@ -20,19 +20,11 @@ $body-color: #000 !default;
 $link-color: #51483d !default;
 $selection-bg: #26351c !default;
 
+//$background-image: url("/Users/caroline.buck/Desktop/Fun_R/rconf_preso/rconf_preso_files/imgs/R_Conf_Background_Slide.png");
+
 /*-- scss:rules --*/
 
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
-}
-
-//TODO: ask mick if background too much? (might have to put this in the back image of mine)
-/* Add a graph paper background
-I like this, but I think I want to figure out how to get a white part down the middle for content background, then have this in the back-background*/
-body {
-  background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, #DEEFF8 1px, transparent 1px),
-    linear-gradient(to bottom, #DEEFF8 1px, transparent 1px);
 }
