@@ -4,154 +4,170 @@
 #author: "Caro Buck"
 format:
   revealjs: 
-    #theme: [default, custom.scss]
     theme: custom.scss
     slide-number: true
     preview-links: auto
     #logo: images/quarto.png
-    #css: styles.css
     footer: <https://carobuck.com>
     multiplex: true
     self-contained: true 
-
 #resources: # do I need this?? tbd what to do w/ this
-#  - demo.pdf
 ---
+
 ## {background-image="imgs/Title.png"}
+
 ## {background-image="imgs/Armchair.png"}
 
-:::{.notes}
-Hook/armchair covid story: in 2020 we all sort of became arm chair experts .....if you were thinking COVID, then you and I are thinking the same thing
-Welcome to the data party
+::: notes
+Hook/armchair covid story: in 2020 we all sort of became arm chair
+experts .....if you were thinking COVID, then you and I are thinking the
+same thing
 :::
 
 ## {background-image="imgs/Armchair_COVID.png"}
 
 ## {background-image="imgs/Background.png"}
 
-
 <br/><br/>
 
-**"They’ve forgotten just how much they know. They think that they’re not doing anything interesting because they assume that everyone knows as much as they do... <br/>As you become more of an expert, your quality bar gets higher and higher and you forget that everything you know is not known by everyone."**
+[**"They think that they're not doing anything interesting because they
+assume that everyone knows as much as they do...<br/>As you become
+more of an expert, your quality bar gets higher and higher and you
+forget that everything you know is not known by everyone."**]{style="font-size: xxx-large;"}
 
--Aaron Francis 
+[-Aaron Francis]{style="font-size: x-large;"}
 
 ::: footer
-[Aaron Francis on publishing your work](https://github.com/readme/guides/publishing-your-work)
+[Aaron Francis on publishing your
+work](https://github.com/readme/guides/publishing-your-work)
 :::
 
-:::{.notes}
+::: {.notes}
+sometimes we forget just how much we know, or we might be "masters" of
+different things
+
 maybe put this after the "what data are" slides??
 
-"this is a common blind spot for people executing at a high level"
-we're all "experts" (or on the spectrum of 'expert') in something
+"this is a common blind spot for people executing at a high level" we're
+all "experts" (or on the spectrum of 'expert') in something
 :::
 
-## What people think data are {background-image="imgs/Think_Data_Are.png"}
+## {background-image="imgs/Think_Data_Are.png"}
 
-:::{.notes}
-TODO: make this full screen image! no title on slide
-TODO: insert an image/drawing here...
+![](imgs/emoji_think.png){.absolute bottom=10 right=500 width="200" height="200"}
+![](imgs/emoji_omg.png){.absolute bottom=10 right=250 width="200" height="200"}
+![](imgs/emoji_nerd.png){.absolute bottom=10 right=0 width="200" height="200"}
+
+## {background-image="imgs/Data_Actually_Are_1.png"}
+
+## {background-image="imgs/Data_Actually_Are_2.png"}
+
+## {background-image="imgs/Data_Actually_Are_3.png"}
+
+## {background-image="imgs/Data_Actually_Are_4.png"}
+
+## {background-image="imgs/invite.png"}
+
+![](imgs/emoji_party.png){.absolute top="50%" right="15%" width="200" height="200"}
+
+::: notes
+Like a good party invite, it's a lot more fun if you've got all the
+details down (unless surprise party, but someone should have the details
+then) Make clear the ref/analogy to party invite (highlight diff
+aspects) We're going to cover all of this (but maybe not in this order)
 :::
 
-## What data actually are {background-image="imgs/Data_Actually_Are.png"}
+## {background-image="imgs/Who_Slide_1.png"}
 
-:::{.notes}
-TODO: insert R code/image fragments here...
+::: notes
+
+"worth noting that" line from novice to expert may not be at all
+straight, and that it's not a single line. It probably more looks like a
+swirling, multi-branched tree/plant root ("choose your own adventure"
+style) --\> because we all might be "experts" in diff things, it's
+worthwhile sharing what we know! remember, quote from before about
+common blindspots!
+
+Use this as a "real quick let's clarify who is a "data" person" moment
+to say why I've been putting quotes around it
+
+**Maybe consider putting this before the 'why'? Feels like a back
+tracking...so be careful about that** a. Who is a "non data" --\> **do I
+need to incl this? --\> can make short/quick** (mention this is why
+there are quotes around it) b. usually self-designated (I think
+anyone/everyone can be a data person, but on a spectrum; we aren't/don't
+have to be at same level) c. who you should be talking to 1. if you work
+in an org, talk with people not on your team, or people that you may
+work w/ obliquely
 :::
 
-## You're invited to the party {background-image="imgs/Background.png"}
+## {background-image="imgs/Who_Slide_2.png"}
 
-:::{.incremental}
-- Who: Everyone!
-- What: Talk about data
-- Where: Anywhere!
-- When: Whenever!
-- Why: Because it's cool! (And useful)
-- How: With excitement and curiosity (we'll get there)
+## {background-image="imgs/Who_Slide_3.png"}
+
+## {background-image="imgs/Who_Slide_4.png"}
+
+## {background-image="imgs/XY_Axis_Slide.png"}
+
+::: notes
+what to say depends on level of person/where they are on data
+    spectrum Like are we going full on theme party (maybe into the weeds
+    on a ML model) or staying a bit more high level with some small talk
+    (maybe get excited about an interesting data journalism article on
+    music taste you saw float by on Twitter recently) The "what" could
+    be educational, it could be entertaining, it could be both ('pique
+    the curiosity'). Depends on the rest of the party invite
 :::
 
-::: {.notes}
-**TODO**: amp up this slide w/ visuals/background for a party. confetti animation gif? --> make this a transition slide
+## {background-image="imgs/XY_Axis_Slide_Filled_In.png"}
 
-Like a good party invite, it’s a lot more fun if you’ve got all the details down (unless surprise party, but someone should have the details then)
-Make clear the ref/analogy to party invite (highlight diff aspects)
-We're going to cover all of this (but maybe not in this order)
+:::{.absolute top="68%" left="15%"}
+[Spotify Wrapped](https://newsroom.spotify.com/2021-12-01/the-wait-is-over-your-spotify-2021-wrapped-is-here/){style="font-size: 15px;"}
 :::
 
-## WHO: {background-image="imgs/Who_Slide_1.png"}
-
-::: {.notes}
-TODO: make straight line drawing + pics to drop in of persons + curvy tree branch line
-
-novice ---> expert* (and beyond)
-maybe you fall here* or here* or here* (add lil people popping up on each slide --> incremental fragment add w/ fixed location? need to define each as fragments)
-
-"worth noting that" line from novice to expert may not be at all straight, and that it's not a single line. It probably more looks like a swirling, multi-branched tree/plant root ("choose your own adventure" style) --> because we all might be "experts" in diff things, it's worthwhile sharing what we know! remember, quote from before about common blindspots!
-
-
-Use this as a “real quick let’s clarify who is a “data” person” moment to say why I’ve been putting quotes around it
-
-**Maybe consider putting this before the ‘why’? Feels like a back tracking…so be careful about that**
-  a. Who is a "non data" --> **do I need to incl this? --> can make short/quick** (mention this is why there are quotes around it)
-  b. usually self-designated (I think anyone/everyone can be a data person, but on a spectrum; we aren't/don't have to be at same level)
-  c. who you should be talking to
-    1. if you work in an org, talk with people not on your team, or people that you may work w/ obliquely
+:::{.absolute top="30%" left="15%"}
+[Pudding's Music Borders](https://pudding.cool/2018/06/music-map/?date=202106){style="font-size: 15px;"}
 :::
 
-## WHO: {background-image="imgs/Who_Slide_2.png"}
-## WHO: {background-image="imgs/Who_Slide_3.png"}
-## WHO: {background-image="imgs/Who_Slide_4.png"}
-
-## WHAT {background-image="imgs/XY_Axis_Slide.png"}
-
-::: {.notes}
-4. what
-  a. what to say depends on level of person/where they are on data spectrum
-Like are we going full on theme party (maybe into the weeds on a ML model) or staying a bit more high level with some small talk (maybe get excited about an interesting data journalism article on music taste you saw float by on Twitter recently)
-The “what” could be educational, it could be entertaining, it could be both (‘pique the curiosity’). Depends on the rest of the party invite
+:::{.absolute top="30%" left="50%"}
+[Nadieh Bremer's Gold Record Data Art](https://www.visualcinnamon.com/portfolio/sony-music-data-art/){style="font-size: 15px;"}
 :::
 
-## WHAT {background-image="imgs/XY_Axis_Slide_Filled_In.png"}
-
-:::{.notes}
-TODO add fixed location text links for each example
-
-[Spotify Wrapped](https://newsroom.spotify.com/2021-12-01/the-wait-is-over-your-spotify-2021-wrapped-is-here/)
-
-[Pudding's Music Borders](https://pudding.cool/2018/06/music-map/?date=202106)
-
-[Nadieh Bremer's Gold Record Data Art](https://www.visualcinnamon.com/portfolio/sony-music-data-art/)
-
-[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/)
+:::{.absolute top="68%" left="50%"}
+[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/){style="font-size: 15px;"}
 :::
 
-## WHERE/WHEN {background-image="imgs/Background.png"}
+## {background-image="imgs/Where_When.png"}
 
-TODO: figure out what to put on this slide... 
+::: notes
+Consider: Is this a last minute backyard hangout or a wedding planned
+months in advance? The where/when and what might also inform the others.
+E.g. if you want/need to deep dive on something to bridge
+understanding/knowledge gap, it makes sense to set up time in advance to
+discuss, so the audience has some sense of what they are getting into.
+If you're casually bringing it up in a way to entertain/show another
+side of data (e.g. a new/unexpected place to find data, or a creative
+data use), the where/when might be over lunch, or a brief meeting in a
+hallway, or maybe even something you share on social media (??)
 
-5. where/when
-  a. lol always and forever
-  b. in seriousness: where could be small doses?
-  c. when: pre-emptive meetings
-  d. consider where people encounter data/viz
-
-
-::: {.notes}
-Consider: Is this a last minute backyard hangout or a wedding planned months in advance?
-The where/when and what might also inform the others. E.g. if you want/need to deep dive on something to bridge understanding/knowledge gap, it makes sense to set up time in advance to discuss, so the audience has some sense of what they are getting into. If you’re casually bringing it up in a way to entertain/show another side of data (e.g. a new/unexpected place to find data, or a creative data use), the where/when might be over lunch, or a brief meeting in a hallway, or maybe even something you share on social media (??)
+a.  lol always and forever
+b.  in seriousness: where could be small doses?
+c.  when: pre-emptive meetings
+d.  consider where people encounter data/viz
 :::
 
-## WHY {background-image="imgs/Sci_Art.png"}
+## {background-image="imgs/Sci_Art.png"}
 
-::: {.notes}
+::: notes
+TODO: consider putting this slide after "who"?? this one's pretty
+important, so we're starting w/ it first
 
-TODO: consider putting this slide after "who"??
-this one's pretty important, so we're starting w/ it first
-
-“data are art + science”; so much more than just numbers (can be charts, vizzes, categories, counts, used for/tracked on/predicted for so many things
-Maybe Transition: so because there are so many different ways to interpret ”what data is” there’s also a lot of misconceptions about it. So it’s important to talk about data with everyone, not just those who are “data people”
-
+"data are art + science"; so much more than just numbers (can be charts,
+vizzes, categories, counts, used for/tracked on/predicted for so many
+things Maybe Transition: so because there are so many different ways to
+interpret "what data is" there's also a lot of misconceptions about it.
+So it's important to talk about data with everyone, not just those who
+are "data people"
 :::
 
 ## WHY- accessibility {background-image="imgs/Background.png"}
@@ -166,40 +182,49 @@ penguins %>%
   glimpse
   #kable::kab
 ```
+
 (will have table of numbers --> viz of numbers)
 
-::: {.notes}
-TODO: make image of table of numbers --> viz (use palmer penguins as example). make something for these 4: (in text, in  table, in single stats, in viz) of palmer penguins.
-Maybe incl slide before one with all 4 things of penguins wandering gif/pushing each other into ice
+::: notes
+TODO: make image of table of numbers --\> viz (use palmer penguins as
+example). make something for these 4: (in text, in table, in single
+stats, in viz) of palmer penguins. Maybe incl slide before one with all
+4 things of penguins wandering gif/pushing each other into ice
 
-you could go out an count penguins all day, and maybe that's what you do. but if that was the only way to learn about them for everyone, then we might not get too far. we rely on others' data to summarize, to count, to understand the world around us. and if we present data in different ways (in text, in  table, in single stats, in viz) we'll be able to understand different aspects/maybe learn something new
+you could go out an count penguins all day, and maybe that's what you
+do. but if that was the only way to learn about them for everyone, then
+we might not get too far. we rely on others' data to summarize, to
+count, to understand the world around us. and if we present data in
+different ways (in text, in table, in single stats, in viz) we'll be
+able to understand different aspects/maybe learn something new
 
-this is just one example of how data can be used as an accessibility tool. numbers themselves can be a way to summarise information, and if we show numbers/data in a particular way, it can make the info more (or less) clear and accessible to folks. 
+this is just one example of how data can be used as an accessibility
+tool. numbers themselves can be a way to summarise information, and if
+we show numbers/data in a particular way, it can make the info more (or
+less) clear and accessible to folks.
 
-
-Mention accessibility (maybe elaborate in the how section)
-HOW DOES ACCESSIBILITY FACTOR IN? --> **TBD on including this??** --> yes, include! in maybe where or why or how
-Visualizations themselves are an accessibility tool, rather than looking at a block of numbers in a spreadsheet or table.
-Of course, there are lots of ways to make visualizations more/less accessible (that's a topic for a whole other talk and there area numerous resources available, so we won't get too in the weeds there)
-By realizing what data literacy is and why it's important for us all to have some level of it, we (looking at those who are deeper in the tech/data world) can lend a hand to others.
+Mention accessibility (maybe elaborate in the how section) HOW DOES
+ACCESSIBILITY FACTOR IN? --\> **TBD on including this??** --\> yes,
+include! in maybe where or why or how Visualizations themselves are an
+accessibility tool, rather than looking at a block of numbers in a
+spreadsheet or table. Of course, there are lots of ways to make
+visualizations more/less accessible (that's a topic for a whole other
+talk and there area numerous resources available, so we won't get too in
+the weeds there) By realizing what data literacy is and why it's
+important for us all to have some level of it, we (looking at those who
+are deeper in the tech/data world) can lend a hand to others.
 :::
-
-
-
-
 
 ## HOW {background-image="imgs/Background.png"}
 
-TODO: make slide. this will be mostly text/links for learning more (make incremental)
-TODO: figure out how to change bullet points
+TODO: make slide. this will be mostly text/links for learning more 
 
-
-
-::: {.notes}
-6. how
-end w/ practical tips
-Twitter? Famous data ppl?
-Ask team?  maybe talk about process of gathering this info, it’s a collective effort/convo (no one is gatekeeper to everything/knows everything about this; there’s always something new to learn which keeps it exciting)
+::: notes
+6.  how end w/ practical tips Twitter? Famous data ppl? Ask team? 
+    maybe talk about process of gathering this info, it's a collective
+    effort/convo (no one is gatekeeper to everything/knows everything
+    about this; there's always something new to learn which keeps it
+    exciting)
 
 just get started? will feel awk, but just need to jump in and do it
 
@@ -208,27 +233,27 @@ share anecdotal story of talking to guy for STR
 
 ## {background-image="imgs/End_Story.png"}
 
-::: {.notes}
-WHY (REMINDER + STORY) 
-TODO: think of what I want visually on this slide to tell the story...maybe screenshot from what I shared with creatives? 
-maybe image of my data portraits? (inspired by giorgia lupi, shared w/ my team b/c bored/covid/thought we'd go back to office sooner. word got around and I )
-7. end w/ final wrap up/remind ppl the WHY
-  a. want ppl to walk away and feel inspired to go share data passion/excitement w/ others
-  b. end w/ story about sharing data w/ [creative] coworkers (they didn't realize data could be so much more than reporting/analytics. and when others see the inspiration/possibilities, we can do cooler things with data!!)
-
+::: notes
+WHY (REMINDER + STORY) TODO: think of what I want visually on this slide
+to tell the story...maybe screenshot from what I shared with creatives?
+maybe image of my data portraits? (inspired by giorgia lupi, shared w/
+my team b/c bored/covid/thought we'd go back to office sooner. word got
+around and I ) 7. end w/ final wrap up/remind ppl the WHY a. want ppl to
+walk away and feel inspired to go share data passion/excitement w/
+others b. end w/ story about sharing data w/ \[creative\] coworkers
+(they didn't realize data could be so much more than
+reporting/analytics. and when others see the inspiration/possibilities,
+we can do cooler things with data!!)
 :::
 
 ## {background-image="imgs/Ty_And_Question.png"}
 
-:::{.notes}
-Thanks for coming to my party! Go do your own parties now!
-(slide to look like TY note?)
+:::{.footer}
+Want to talk more? Holler @ [carobuck.com](https://carobuck.com/)
+:::
+
+::: {.notes}
+Thanks for coming to my party! Go do your own parties now! 
 :::
 
 
-## TODOs
-
-- change bullets
-- take off slide headings?? for 5 W's (maybe make small, like an aside? in upper right corner for people to be tracking along)
-- are data portraits img clear? (not fuzzy)
-- cmd + F other "TODO" in doc
