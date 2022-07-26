@@ -20,7 +20,7 @@ format:
 
 ## {background-image="imgs/Armchair.png"}
 
-::: notes
+::: {.notes}
 Hook/armchair covid story: in 2020 we all sort of became arm chair
 experts .....if you were thinking COVID, then you and I are thinking the
 same thing
@@ -30,16 +30,20 @@ same thing
 
 ## {background-image="imgs/Background.png"}
 
-<br/><br/>
+::: {style="font-size: 1.8em; font-style:bold;"}
 
-[**"They think that they're not doing anything interesting because they
-assume that everyone knows as much as they do...<br/>As you become
-more of an expert, your quality bar gets higher and higher and you
-forget that everything you know is not known by everyone."**]{style="font-size: xxx-large; font-face:bold;"}
 
-[-Aaron Francis]{style="font-size: x-large;"}
+"They think that they're not doing anything interesting because they
+assume that everyone knows as much as they do...
+<br />
+As you become more of an expert, your quality bar gets higher and higher and you
+forget that everything you know is not known by everyone."
 
-::: footer
+:::
+
+[-Aaron Francis]{style="font-size: xxx-large;"}
+
+::: {.footer}
 [Aaron Francis on publishing your
 work](https://github.com/readme/guides/publishing-your-work)
 :::
@@ -57,13 +61,13 @@ all "experts" (or on the spectrum of 'expert') in something
 ## {background-image="imgs/Think_Data_Are.png"}
 
 :::{.fragment}
-![](imgs/emoji_think.png){.absolute bottom=50 right=675 width="250" height="250"}
+![](imgs/emoji_think.png){.absolute bottom="17%" right=725 width="275" height="275"}
 :::
 :::{.fragment}
-![](imgs/emoji_omg.png){.absolute bottom=50 right=375 width="250" height="250"}
+![](imgs/emoji_omg.png){.absolute bottom="17%" right=400 width="275" height="275"}
 :::
 :::{.fragment}
-![](imgs/emoji_nerd.png){.absolute bottom=50 right=75 width="250" height="250"}
+![](imgs/emoji_nerd.png){.absolute bottom="17%" right=75 width="275" height="275"}
 :::
 
 ## {background-image="imgs/Data_Actually_Are_1.png"}
@@ -76,18 +80,19 @@ all "experts" (or on the spectrum of 'expert') in something
 
 ## {background-image="imgs/invite.png"}
 
-![](imgs/emoji_party.png){.absolute top="45%" right="8%" width="275" height="275"}
+![](imgs/emoji_party.png){.absolute top="45%" right="5%" width="350" height="350"}
 
-::: notes
+::: {.notes}
+YOU'RE INVITED! we're all at the biggest data party there is, but I'm formally inviting you to another. 
+In this one, it's about talking about data, especially with ppl who think they aren't "data people"
 Like a good party invite, it's a lot more fun if you've got all the
 details down (unless surprise party, but someone should have the details
-then) Make clear the ref/analogy to party invite (highlight diff
-aspects) We're going to cover all of this (but maybe not in this order)
+then) 
 :::
 
 ## {background-image="imgs/Who_Slide_1.png"}
 
-::: notes
+::: {.notes}
 
 "worth noting that" line from novice to expert may not be at all
 straight, and that it's not a single line. It probably more looks like a
@@ -117,7 +122,7 @@ work w/ obliquely
 
 ## {background-image="imgs/XY_Axis_Slide.png"}
 
-::: notes
+::: {.notes}
 what to say depends on level of person/where they are on data
     spectrum Like are we going full on theme party (maybe into the weeds
     on a ML model) or staying a bit more high level with some small talk
@@ -142,12 +147,12 @@ what to say depends on level of person/where they are on data
 :::
 
 :::{.absolute top="73%" left="50%"}
-[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/){style="font-size: large;"}
+[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/){style="font-size: x-large;"}
 :::
 
 ## {background-image="imgs/Where_When.png"}
 
-::: notes
+::: {.notes}
 Consider: Is this a last minute backyard hangout or a wedding planned
 months in advance? The where/when and what might also inform the others.
 E.g. if you want/need to deep dive on something to bridge
@@ -166,9 +171,8 @@ d.  consider where people encounter data/viz
 
 ## {background-image="imgs/Sci_Art.png"}
 
-::: notes
-TODO: consider putting this slide after "who"?? this one's pretty
-important, so we're starting w/ it first
+::: {.notes}
+like mentioned at beginning, data are a lot more than what we might think about 
 
 "data are art + science"; so much more than just numbers (can be charts,
 vizzes, categories, counts, used for/tracked on/predicted for so many
@@ -178,25 +182,30 @@ So it's important to talk about data with everyone, not just those who
 are "data people"
 :::
 
-## WHY- accessibility {background-image="imgs/Background.png"}
+## {background-image="imgs/Why_Blank.png"}
 
-::: {.column width="20%"}
-Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.19mm**, compared to Adelie (**189.95 mm**) and Chinstrap (**195.82 mm**) penguins.  
+::: {.column width="50%"}
+::: {.fragment .semi-fade-out .absolute top="10%" width="50%"}
+Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.2 mm**, compared to Adelie (**190.0 mm**) and Chinstrap (**195.8 mm**) penguins.  
 :::
 
-::: {.column width="30%"}
+::: {.fragment .fade-in-then-semi-out .absolute bottom="30%"}
+
 ```{r}
 library(tidyverse)
 
 palmerpenguins::penguins %>%
   group_by(species) %>%
-  summarise(across(starts_with('fli'), ~ mean(.x, na.rm = TRUE))) %>%
+  summarise(across(starts_with('fli'), ~ scales::number(mean(.x, na.rm = TRUE),.1))) %>%
   knitr::kable(caption='Penguin Measurements by Species')
 ```
 :::
+:::
 
-::: {.column width="50%"}
-```{r}
+::: {.column width="40%"}
+:::{.fragment}
+```{r, fig.width=10,fig.height=14}
+#| fig-align: "center"
 palmerpenguins::penguins %>%
   group_by(species) %>%
   summarise(across(ends_with('mm'), ~ mean(.x, na.rm = TRUE))) %>%
@@ -204,7 +213,7 @@ palmerpenguins::penguins %>%
   mutate(name=str_sub(name,1,-4)) %>%
   ggplot(aes(x=value,y=species,fill=species,label=scales::number(value,.1,suffix=' mm'))) +
   geom_col(position = 'dodge',color='black') +
-  geom_label(fill='white',hjust=-.1) +
+  geom_label(fill='white',hjust=-.1,size=5) +
   facet_grid(name~.,scales = 'free_y') +
   scale_fill_manual(values = c('#FFE330','#00D1D9','#015377')) +
   theme_bw() +
@@ -212,14 +221,16 @@ palmerpenguins::penguins %>%
   labs(title='Penguin Measurements by Species',
        x='Length (mm)',y='') +
   theme(legend.position = 'None',
-        strip.text.y = element_text(angle=0,size=12),
-        axis.text = element_text(size=12),
-        title = element_text(face='bold',size=14))
+        strip.text.y = element_text(angle=0,size=20),
+        axis.text = element_text(size=18),
+        axis.text.x = element_text(size = 18),
+        axis.text.y = element_text(size=18),
+        title = element_text(face='bold',size=26))
 ```
 :::
+:::
 
-
-::: notes
+::: {.notes}
 TODO: make image of table of numbers --\> viz (use palmer penguins as
 example). make something for these 4: (in text, in table, in single
 stats, in viz) of palmer penguins. Maybe incl slide before one with all
@@ -264,7 +275,7 @@ are deeper in the tech/data world) can lend a hand to others.
 :::
 
 
-::: notes
+::: {.notes}
 6.  how end w/ practical tips Twitter? Famous data ppl? Ask team? 
     maybe talk about process of gathering this info, it's a collective
     effort/convo (no one is gatekeeper to everything/knows everything
@@ -274,13 +285,13 @@ are deeper in the tech/data world) can lend a hand to others.
  
 ## {background-image="imgs/How2.png"}
 
-::: notes
+::: {.notes}
 just get started? may very likey feel awk, but just need to jump in and do it
 :::
 
 ## {background-image="imgs/End_Story.png"}
 
-::: notes
+::: {.notes}
 WHY (REMINDER + STORY) TODO: think of what I want visually on this slide
 to tell the story...maybe screenshot from what I shared with creatives?
 maybe image of my data portraits? (inspired by giorgia lupi, shared w/
