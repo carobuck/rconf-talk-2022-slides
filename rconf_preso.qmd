@@ -8,9 +8,11 @@ format:
     slide-number: true
     preview-links: auto
     #logo: images/quarto.png
-    footer: <https://carobuck.com>
+    #footer: <https://carobuck.com>
     multiplex: true
     self-contained: true 
+    width: 1920
+    height: 1080
 #resources: # do I need this?? tbd what to do w/ this
 ---
 
@@ -33,7 +35,7 @@ same thing
 [**"They think that they're not doing anything interesting because they
 assume that everyone knows as much as they do...<br/>As you become
 more of an expert, your quality bar gets higher and higher and you
-forget that everything you know is not known by everyone."**]{style="font-size: xxx-large;"}
+forget that everything you know is not known by everyone."**]{style="font-size: xxx-large; font-face:bold;"}
 
 [-Aaron Francis]{style="font-size: x-large;"}
 
@@ -54,9 +56,15 @@ all "experts" (or on the spectrum of 'expert') in something
 
 ## {background-image="imgs/Think_Data_Are.png"}
 
-![](imgs/emoji_think.png){.absolute bottom=10 right=500 width="200" height="200"}
-![](imgs/emoji_omg.png){.absolute bottom=10 right=250 width="200" height="200"}
-![](imgs/emoji_nerd.png){.absolute bottom=10 right=0 width="200" height="200"}
+:::{.fragment}
+![](imgs/emoji_think.png){.absolute bottom=45 right=650 width="250" height="250"}
+:::
+:::{.fragment}
+![](imgs/emoji_omg.png){.absolute bottom=45 right=350 width="250" height="250"}
+:::
+:::{.fragment}
+![](imgs/emoji_nerd.png){.absolute bottom=45 right=50 width="250" height="250"}
+:::
 
 ## {background-image="imgs/Data_Actually_Are_1.png"}
 
@@ -68,7 +76,7 @@ all "experts" (or on the spectrum of 'expert') in something
 
 ## {background-image="imgs/invite.png"}
 
-![](imgs/emoji_party.png){.absolute top="50%" right="15%" width="200" height="200"}
+![](imgs/emoji_party.png){.absolute top="45%" right="8%" width="275" height="275"}
 
 ::: notes
 Like a good party invite, it's a lot more fun if you've got all the
@@ -121,20 +129,20 @@ what to say depends on level of person/where they are on data
 
 ## {background-image="imgs/XY_Axis_Slide_Filled_In.png"}
 
-:::{.absolute top="68%" left="15%"}
-[Spotify Wrapped](https://newsroom.spotify.com/2021-12-01/the-wait-is-over-your-spotify-2021-wrapped-is-here/){style="font-size: 15px;"}
+:::{.absolute top="73%" left="15%"}
+[Spotify Wrapped](https://newsroom.spotify.com/2021-12-01/the-wait-is-over-your-spotify-2021-wrapped-is-here/){style="font-size: x-large;"}
 :::
 
-:::{.absolute top="30%" left="15%"}
-[Pudding's Music Borders](https://pudding.cool/2018/06/music-map/?date=202106){style="font-size: 15px;"}
+:::{.absolute top="35%" left="15%"}
+[Pudding's Music Borders](https://pudding.cool/2018/06/music-map/?date=202106){style="font-size: x-large;"}
 :::
 
-:::{.absolute top="30%" left="50%"}
-[Nadieh Bremer's Gold Record Data Art](https://www.visualcinnamon.com/portfolio/sony-music-data-art/){style="font-size: 15px;"}
+:::{.absolute top="35%" left="50%"}
+[Nadieh Bremer's Gold Record Data Art](https://www.visualcinnamon.com/portfolio/sony-music-data-art/){style="font-size: x-large;"}
 :::
 
-:::{.absolute top="68%" left="50%"}
-[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/){style="font-size: 15px;"}
+:::{.absolute top="73%" left="50%"}
+[Pudding's Judge My Spotify](https://pudding.cool/2021/10/judge-my-music/){style="font-size: large;"}
 :::
 
 ## {background-image="imgs/Where_When.png"}
@@ -172,16 +180,26 @@ are "data people"
 
 ## WHY- accessibility {background-image="imgs/Background.png"}
 
+::: {.column width="30%"}
+Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.19mm**, compared to Adelie (**189.95mm**) and Chinstrap (**195.82**) penguins.  
+:::
+
+::: {.column width="30%"}
 ```{r}
-library(palmerpenguins)
 library(tidyverse)
 
-penguins %>%
+palmerpenguins::penguins %>%
   group_by(species) %>%
-  #summarise(across(ends_with('mm')),.fun=mean)
-  glimpse
-  #kable::kab
+  summarise(across(ends_with('mm'), ~ mean(.x, na.rm = TRUE))) %>%
+  knitr::kable(caption='Penguin Measurements by Species')
 ```
+:::
+
+::: {.column width="30%"}
+Right column
+:::
+
+
 
 (will have table of numbers --> viz of numbers)
 
@@ -215,9 +233,20 @@ important for us all to have some level of it, we (looking at those who
 are deeper in the tech/data world) can lend a hand to others.
 :::
 
-## HOW {background-image="imgs/Background.png"}
+## {background-image="imgs/How.png"}
 
-TODO: make slide. this will be mostly text/links for learning more 
+:::{.absolute top="80%" left="10%"}
+[Sign up for Washington Post's Newsletter](https://www.washingtonpost.com/newsletters/how-to-read-this-chart/){style="font-size: x-large;"}
+:::
+
+:::{.absolute top="80%" left="45%"}
+[Find a Podcast](https://towardsdatascience.com/5-data-science-podcasts-you-should-be-listening-to-72d8efd0b9ec){style="font-size: x-large;"}
+:::
+
+:::{.absolute top="80%" left="75%"}
+[Read Janelle Shane's Book](https://www.janelleshane.com/book-you-look-like-a-thing){style="font-size: x-large;"}
+:::
+
 
 ::: notes
 6.  how end w/ practical tips Twitter? Famous data ppl? Ask team? 
@@ -225,10 +254,12 @@ TODO: make slide. this will be mostly text/links for learning more
     effort/convo (no one is gatekeeper to everything/knows everything
     about this; there's always something new to learn which keeps it
     exciting)
+:::
+ 
+## {background-image="imgs/How2.png"}
 
-just get started? will feel awk, but just need to jump in and do it
-
-share anecdotal story of talking to guy for STR
+::: notes
+just get started? may very likey feel awk, but just need to jump in and do it
 :::
 
 ## {background-image="imgs/End_Story.png"}
