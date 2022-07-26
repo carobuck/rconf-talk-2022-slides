@@ -57,13 +57,13 @@ all "experts" (or on the spectrum of 'expert') in something
 ## {background-image="imgs/Think_Data_Are.png"}
 
 :::{.fragment}
-![](imgs/emoji_think.png){.absolute bottom=45 right=650 width="250" height="250"}
+![](imgs/emoji_think.png){.absolute bottom=50 right=675 width="250" height="250"}
 :::
 :::{.fragment}
-![](imgs/emoji_omg.png){.absolute bottom=45 right=350 width="250" height="250"}
+![](imgs/emoji_omg.png){.absolute bottom=50 right=375 width="250" height="250"}
 :::
 :::{.fragment}
-![](imgs/emoji_nerd.png){.absolute bottom=45 right=50 width="250" height="250"}
+![](imgs/emoji_nerd.png){.absolute bottom=50 right=75 width="250" height="250"}
 :::
 
 ## {background-image="imgs/Data_Actually_Are_1.png"}
@@ -180,8 +180,8 @@ are "data people"
 
 ## WHY- accessibility {background-image="imgs/Background.png"}
 
-::: {.column width="30%"}
-Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.19mm**, compared to Adelie (**189.95mm**) and Chinstrap (**195.82**) penguins.  
+::: {.column width="20%"}
+Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.19mm**, compared to Adelie (**189.95 mm**) and Chinstrap (**195.82 mm**) penguins.  
 :::
 
 ::: {.column width="30%"}
@@ -190,18 +190,34 @@ library(tidyverse)
 
 palmerpenguins::penguins %>%
   group_by(species) %>%
-  summarise(across(ends_with('mm'), ~ mean(.x, na.rm = TRUE))) %>%
+  summarise(across(starts_with('fli'), ~ mean(.x, na.rm = TRUE))) %>%
   knitr::kable(caption='Penguin Measurements by Species')
 ```
 :::
 
-::: {.column width="30%"}
-Right column
+::: {.column width="50%"}
+```{r}
+palmerpenguins::penguins %>%
+  group_by(species) %>%
+  summarise(across(ends_with('mm'), ~ mean(.x, na.rm = TRUE))) %>%
+  pivot_longer(2:4) %>%
+  mutate(name=str_sub(name,1,-4)) %>%
+  ggplot(aes(x=value,y=species,fill=species,label=scales::number(value,.1,suffix=' mm'))) +
+  geom_col(position = 'dodge',color='black') +
+  geom_label(fill='white',hjust=-.1) +
+  facet_grid(name~.,scales = 'free_y') +
+  scale_fill_manual(values = c('#FFE330','#00D1D9','#015377')) +
+  theme_bw() +
+  scale_x_continuous(limits = c(0,300)) +
+  labs(title='Penguin Measurements by Species',
+       x='Length (mm)',y='') +
+  theme(legend.position = 'None',
+        strip.text.y = element_text(angle=0,size=12),
+        axis.text = element_text(size=12),
+        title = element_text(face='bold',size=14))
+```
 :::
 
-
-
-(will have table of numbers --> viz of numbers)
 
 ::: notes
 TODO: make image of table of numbers --\> viz (use palmer penguins as
