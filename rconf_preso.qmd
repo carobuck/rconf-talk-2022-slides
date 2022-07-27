@@ -18,17 +18,27 @@ format:
 
 ## {background-image="imgs/Title.png"}
 
-## {background-image="imgs/Armchair.png"}
-
-::: {.notes}
-Hook/armchair covid story: in 2020 we all sort of became arm chair
-experts .....if you were thinking COVID, then you and I are thinking the
-same thing
+:::{.notes}
+Hello + welcome everyone! I'm Caro (short for Caroline)
+I'm a DS at a marketing agency working on a creative tech team (so I work on a more creative team that makes cool data toys and goes down a lot of weird rabbit holes)
+I'm here to talk about talking to people who think they're not data ppl
 :::
 
-## {background-image="imgs/Armchair_COVID.png"}
+## {background-image="imgs/Armchair.png" fig-alt="A hand-drawn navy and gold arm chair on a white background with confetti in the corners."}
 
-## {background-image="imgs/Background.png"}
+::: {.notes}
+So, in 2020, we all kinda became arm chair experts...
+:::
+
+## {background-image="imgs/Armchair_COVID.png" fig-alt="A hand-drawn navy and gold arm chair with a covid virus drawn on top, on a white background with confetti in the corners."}
+
+::: {.notes}
+if you were thinking COVID, then you and I are thinking the same thing.
+data've always had/currently have a large impact in our lives, but it's not always visible.
+suddenly, with covid pandemic, data had a very visceral, very real, very obvious impact in our lives. dictated what we should/shouldn't do, who we could see, where we could go. understanding numbers and charts suddenly became crucial to our daily lives and a lot of new jargon was thrown into the vernacular- e.g. "flatten the curve" "mask up" etc. 
+:::
+
+## {background-image="imgs/Background.png" fig-alt="A plain white background with confetti in the corners."}
 
 ::: {style="font-size: 1.8em; font-style:bold;"}
 
@@ -49,34 +59,55 @@ work](https://github.com/readme/guides/publishing-your-work)
 :::
 
 ::: {.notes}
+to set us up for this talk, I want to share this quote as a little inspo content.
+we're all "masters" of something (master being a term that exists on a spectrum and can be loosely defined)
 sometimes we forget just how much we know, or we might be "masters" of
-different things
-
-maybe put this after the "what data are" slides??
-
-"this is a common blind spot for people executing at a high level" we're
-all "experts" (or on the spectrum of 'expert') in something
+different things, and it's worthwhile to remember our blind spots and share what we do know. 
 :::
 
-## {background-image="imgs/Think_Data_Are.png"}
+## {background-image="imgs/Think_Data_Are.png" fig-alt="A white background slide with confetti in the corners, with hand-drawn table of fake data, binary numbers, pie chart and line chart to illustrate different forms data can take on."}
 
 :::{.fragment}
-![](imgs/emoji_think.png){.absolute bottom="17%" right=725 width="275" height="275"}
+![](imgs/emoji_think.png){.absolute bottom="17%" right=725 width="275" height="275" fig-alt="Thinking face emoji"}
 :::
 :::{.fragment}
-![](imgs/emoji_omg.png){.absolute bottom="17%" right=400 width="275" height="275"}
+![](imgs/emoji_omg.png){.absolute bottom="17%" right=400 width="275" height="275" fig-alt="OMG face emoji"}
 :::
 :::{.fragment}
-![](imgs/emoji_nerd.png){.absolute bottom="17%" right=75 width="275" height="275"}
+![](imgs/emoji_nerd.png){.absolute bottom="17%" right=75 width="275" height="275" fig-alt="Nerd face emoji"}
 :::
 
-## {background-image="imgs/Data_Actually_Are_1.png"}
+:::{.notes}
+so let's hop into it. Ppl have lots of (mis)conceptions about what data are- maybe tables, numbers, lots of 1/0s, charts, etc.
+CLICK: Or maybe they just think it's something big, and needs a lot of thinking
+CLICK: or maybe that it's something scary, something to be afraid of
+CLICK: or maybe, it's something just for nerds and is "too hard" to understand -this one makes me sad/angry :(
+:::
 
-## {background-image="imgs/Data_Actually_Are_2.png"}
+## {background-image="imgs/Data_Actually_Are_1.png" fig-alt="White background slide with confetti in corners and 'Yes, and' handwritten on it"}
 
-## {background-image="imgs/Data_Actually_Are_3.png"}
+:::{.notes}
+Data are all of those things! And so much more! like in improv, it's a "yes, and" situation.
+meaning you take what your partner offers, and add something to the story, you may shape and refine and take in a new direction, but you meet the person where they're coming from/currently at
+:::
 
-## {background-image="imgs/Data_Actually_Are_4.png"}
+## {background-image="imgs/Data_Actually_Are_2.png" fig-alt="White background slide with confetti in corners and 'Yes, and: Creative' handwritten on it"}
+
+:::{.notes}
+data are creative! so much more than black/white (lots gray in between). data not always "hard n fast" or "right"
+:::
+
+## {background-image="imgs/Data_Actually_Are_3.png" fig-alt="White background slide with confetti in corners and 'Yes, and: Creative, Scientific' handwritten on it"}
+
+:::{.notes}
+data are scientific, while very creative, it can also be rigorous way to study world around us, to collect info (that's basically what individual data bits are!)
+:::
+
+## {background-image="imgs/Data_Actually_Are_4.png" fig-alt="White background slide with confetti in corners and 'Yes, and: Creative, Scientific, Everywhere' handwritten on it"}
+
+:::{.notes}
+EVERYWHERE! the more you look, the more you see! this makes it really fun to talk about data with other people- just ask my friends n fam haha
+:::
 
 ## {background-image="imgs/invite.png"}
 
