@@ -113,7 +113,7 @@ EVERYWHERE! the more you look, the more you see! this makes it really fun to tal
 
 ## {background-image="imgs/invite.png" fig-alt="White background slide with confetti in corners and handwritten party invitiation that says 'Who: Everyone!; What: Talk about data!; Where: Wherever!; When: Whenever!; Why: It's cool! (& Useful); How: Excitement & Curiosity'"}
 
-![](imgs/emoji_party.png){.absolute top="45%" right="5%" width="350" height="350"}
+![](imgs/emoji_party.png){.absolute top="45%" right="5%" width="350" height="350" fig-alt="Party face emoji"}
 
 ::: {.notes}
 we're all at the biggest data party there is, but I'm formally inviting you to another. 
@@ -245,8 +245,11 @@ palmerpenguins::penguins %>%
 
 ::: {.column width="40%"}
 :::{.fragment}
-```{r, fig.width=10,fig.height=14}
+```{r}
 #| fig-align: "center"
+#| fig.alt: "Column chart of penguin flipper and bill measurements by species"
+#| fig.width: 10
+#| fig.height: 14
 palmerpenguins::penguins %>%
   group_by(species) %>%
   summarise(across(ends_with('mm'), ~ mean(.x, na.rm = TRUE))) %>%
@@ -273,9 +276,9 @@ palmerpenguins::penguins %>%
 
 ::: {.notes}
 you could go out an count penguins all day, and maybe that's what you
-do. but that's not what I'm gonna do. I rely on others collection to learn new stuff
+do. but that's not what I'm gonna do. I rely on others data collection to learn new stuff
 
-this is just one example of how data can be used as an accessibility
+this is just one example of how data itself can be used as an accessibility
 tool. numbers themselves can be a way to summarise information, and if
 we show numbers/data in a particular way, it can make the info more (or
 less) clear and accessible to folks.
@@ -283,7 +286,7 @@ less) clear and accessible to folks.
 learn not just about penguins, but also able to interpret current events in world (e.g. covid charts)
 :::
 
-## {background-image="imgs/How.png"}
+## {background-image="imgs/How.png" fig-alt="White background with confetti in corners, and a hand drawn newsletter, headphones and book."}
 
 :::{.absolute top="80%" left="10%"}
 [Sign up for Washington Post's Newsletter](https://www.washingtonpost.com/newsletters/how-to-read-this-chart/){style="font-size: x-large;"}
@@ -299,35 +302,36 @@ learn not just about penguins, but also able to interpret current events in worl
 
 
 ::: {.notes}
-6.  how end w/ practical tips Twitter? Famous data ppl? Ask team? 
-    maybe talk about process of gathering this info, it's a collective
-    effort/convo (no one is gatekeeper to everything/knows everything
-    about this; there's always something new to learn which keeps it
-    exciting)
+you might be wondering, how do I get started? maybe you're ready to go, maybe you want some more prep.
+here are some refs to check out for inspiration or other "what"s to talk about w/ ppl
 :::
  
-## {background-image="imgs/How2.png"}
+## {background-image="imgs/How2.png" fig-alt="White background with confetti in corners and hand drawn person standing in the middle with a text bubble that says 'data'."}
 
 ::: {.notes}
+but my main advice? just go for it.
 just get started? may very likey feel awk, but just need to jump in and do it
 :::
 
-## {background-image="imgs/End_Story.png"}
+## {background-image="imgs/End_Story.png" fig-alt="White background with 8 colorful data portraits/badges that describe my coworkers, based on a legend."}
 
 ::: {.notes}
-WHY (REMINDER + STORY) TODO: think of what I want visually on this slide
-to tell the story...maybe screenshot from what I shared with creatives?
-maybe image of my data portraits? (inspired by giorgia lupi, shared w/
-my team b/c bored/covid/thought we'd go back to office sooner. word got
-around and I ) 7. end w/ final wrap up/remind ppl the WHY a. want ppl to
-walk away and feel inspired to go share data passion/excitement w/
-others b. end w/ story about sharing data w/ \[creative\] coworkers
+so, a story for why it's selfishly good to talk to "non datas"... 
+
+back near beg of covid, I came across GL's data portraits and wanted to do something similar for my team. 
+thought would be fun desk name tag for when we went back to office soon (spoiler, we never went back to office)
+but, fun to make and really fun to share w/ my team and guess who's who. fun to get to know each other in a way that wasn't strictly related to work, while working remotely. 
+word got around about these and creative lead "you're gonna share w/ the whole C team"
+me: "really?!?" so I did. 
+it was amazing to be able to share something very data driven, that was also very creative.
 (they didn't realize data could be so much more than
 reporting/analytics. and when others see the inspiration/possibilities,
 we can do cooler things with data!!)
+
+So, we, data people can selfishly do cooler things when others realize our powers and are willing to let data out of the box
 :::
 
-## {background-image="imgs/Ty_And_Question.png"}
+## {background-image="imgs/Ty_And_Question.png" fig-alt="White background with confetti in corners; 'Thank you' and 'Questions?' written on the slide."}
 
 :::{.footer}
 Want to talk more? Holler @ [carobuck.com](https://carobuck.com/)
