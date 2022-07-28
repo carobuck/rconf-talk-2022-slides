@@ -218,6 +218,10 @@ data are science, and art, AND ACCESSIBILITY TOOL.
 
 ## {background-image="imgs/Why_Blank.png" fig-alt="White background with confetti in corners"}
 
+:::{.fragment .fade-out .absolute top="25%" right="40%" width="500" height="800"}
+![](imgs/Penguin.png){fig-alt="hand drawn penguin"}
+:::
+
 ::: {.column width="50%"}
 ::: {.fragment .fade-in-then-semi-out .absolute top="10%" width="50%"}
 Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.2 mm**, compared to Adelie (**190.0 mm**) and Chinstrap (**195.8 mm**) penguins.  
