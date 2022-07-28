@@ -212,21 +212,14 @@ hallway, etc
 ## {background-image="imgs/Sci_Art.png" fig-alt="White background with confetti in corners, equation of Data=Science+Art handwritten on slide"}
 
 ::: {.notes}
-like mentioned at beginning, data are a lot more than what we might think about 
-
-REMEMBER "data are art + science"; so much more than just numbers (can be charts,
-vizzes, categories, counts, used for/tracked on/predicted for so many
-things
-because there are so many different ways to
-interpret "what data is" there's also a lot of misconceptions about it.
-So it's important to talk about data with everyone, not just those who
-are "data people"
+like mentioned at beginning, data are a lot more than what we might think about.
+data are science, and art, AND ACCESSIBILITY TOOL. 
 :::
 
 ## {background-image="imgs/Why_Blank.png" fig-alt="White background with confetti in corners"}
 
 ::: {.column width="50%"}
-::: {.fragment .semi-fade-out .absolute top="10%" width="50%"}
+::: {.fragment .fade-in-then-semi-out .absolute top="10%" width="50%"}
 Penguins come in all shapes and sizes. Gentoo penguins tend to have the longest flipper length, on average, at **217.2 mm**, compared to Adelie (**190.0 mm**) and Chinstrap (**195.8 mm**) penguins.  
 :::
 
